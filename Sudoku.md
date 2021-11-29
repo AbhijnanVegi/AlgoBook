@@ -1,4 +1,4 @@
-# Sudoku
+# How does a computer solve Sudoku ?
 
 *Sudoku* is a logic based, combinatorial number placement puzzle. Given a partially completed $9 \times 9$ grid of numbers from 1 to 9 we fill all the remaining boxes with digits from 1 to 9 such that every row, column, diagonal and each of the nine $3 \times 3$  grids contain all the digits from 1 to 9.
 

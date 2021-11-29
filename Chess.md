@@ -1,6 +1,6 @@
-# Chess
+# How does a computer play chess ?
 
-Chess is an abstract strategy game. It is played on an $8 \times 8$ grid, with each player controlling sixteen pieces: one king, one queen, two rooks, two knights, two bishops amd eight pawns. The object of the game is to checkmate the opponent's king, whereby the king is under immediate attack and there is no way for it to escape.
+Chess is an abstract strategy game. It is played on an $8 \times 8$ grid, with each player controlling sixteen pieces: one king, one queen, two rooks, two knights, two bishops and eight pawns. The object of the game is to checkmate the opponent's king, whereby the king is under immediate attack and there is no way for it to escape.
 
 ![image-20211126195042528](Assets/image-20211126195042528.png)
 
@@ -9,10 +9,6 @@ The moves of each of the pieces is shown below
 ![image-20211126194624388](Assets/image-20211126194624388.png)
 
 We will now explore an algorithm that’s responsible for your computer beating you at chess. 
-
-
-
-
 
 ## Minimax
 
@@ -25,8 +21,6 @@ Lets start of by looking at the moves a computer can make if its starting the ga
 ![img](Assets/13MQD8VuYDKCSAZOsv7qAsQ.png)
 
 The above is an example of a minimax search tree. The leaf nodes are assigned scores based on some evaluation function and the higher nodes then decide their scores based on the min or max of their children nodes.
-
-
 
 This pseudocode for algorithm is given below
 
@@ -41,7 +35,7 @@ def minimax(node, depth, maximizing player):
         for child of node:
             value = max(value, minimax(child, depth - 1, False))
         return value
-   	else:
+       else:
         value = +∞
         for child of node:
             value = min(value, minimax(child, depth-1, True))
@@ -67,4 +61,5 @@ Alpha-beta search skips nodes once it knows for certain that they won’t be pla
 - The algorithm can be further optimised by using move ordering, transposition tables and quiescence search. You can read about these [here](https://medium.com/@SereneBiologist/the-anatomy-of-a-chess-ai-2087d0d565#:~:text=an%20evaluation%20function.-,Minimax%20search,chess%20engine%20compares%20possible%20moves.&text=The%20minimax%20algorithm%20takes%20advantage,the%20opponent's%20chances%20of%20winning.).
 
 - Another approach to the same problem is [AlphaZero](https://en.wikipedia.org/wiki/AlphaZero), which utilises neural networks along with monte-carlo tree search.
+
 - This [link](https://www.freecodecamp.org/news/simple-chess-ai-step-by-step-1d55a9266977/) includes a good board evaluation function along with other ways to improve our algorithm.

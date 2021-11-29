@@ -1,0 +1,3 @@
+# Preface
+
+One of the important questions one asks before learning something is whether the new the knowledge he’s going to acquire have any practical applications in day to day life. This books answers that question for anyone who wishes to learn about algorithms. In this book I explore the various applications of algorithms in day to day life and explain them in detail with good visualisations. Some of the topics have been linked to pages that cover the topic with more detail for anyone who is interested. 

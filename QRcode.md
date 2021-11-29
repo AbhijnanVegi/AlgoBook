@@ -1,4 +1,4 @@
-# QR Code
+# How do QR Codes work ?
 
 **QR code** is short for quick response code is type of two-dimensional barcode. The QR code became popular due to its fast readability and greater storage capacity compared to standard barcodes. A QR code consists of black squares arranged in a square grid on a white background, which can be read by an imaging device. Below is the QR code for a Wikipedia page.
 
